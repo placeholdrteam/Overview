@@ -11,7 +11,9 @@ Since the purpose of this repo is an overview of the app in general, there is no
 
 ## What this repo is for
 
-The purpose of this repo is for planning and vision ideas. 
+The purpose of this repo is for planning and vision ideas.
+
+This is also where we keep the main project board.
 
 * **If you have an idea**
   > Create an issue, with an enhancement tag, and perhaps an ideal release version to be included in. Also, assign it to the approriate person, project, and perhaps milestone *if you are using that process*
