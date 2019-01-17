@@ -19,6 +19,8 @@ This is also where we keep the main project board.
   > Create an issue, with an enhancement tag, and perhaps an ideal release version to be included in. Also, assign it to the approriate person, project, and perhaps milestone *if you are using that process*
 * **If you have a question**
   > Create an issue, with a question tag, and assign it to the individual you believe can answer it
+* **If you are working on something**
+  > Move it's issue card to the *In Progress* column manually, as there is not good automation to do this
 * **If you have a mockup**
   > Add it either to the mockup folder (bad), or as a hosted link to the MockUps.md (better)
 * **If you are moving a card to another board**
