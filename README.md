@@ -17,5 +17,9 @@ This is also where we keep the main project board.
 
 * **If you have an idea**
   > Create an issue, with an enhancement tag, and perhaps an ideal release version to be included in. Also, assign it to the approriate person, project, and perhaps milestone *if you are using that process*
+* **If you have a question**
+  > Create an issue, with a question tag, and assign it to the individual you believe can answer it
 * **If you have a mockup**
   > Add it either to the mockup folder (bad), or as a hosted link to the MockUps.md (better)
+* **If you are moving a card to another board**
+  > Tag it as assigned, and close the issue. This will move it to the done column, and will indicate it's functionality will be worked on in the appropriate repo. If you close an issue without tagging as assigned, it will be assumed to have been rejected, or taken care of within this repo already.
