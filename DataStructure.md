@@ -8,6 +8,9 @@
       * profile picture
       * pictures/
         * picture ...
+  * users/
+    * uid/
+      * profile picture
 
 
 
