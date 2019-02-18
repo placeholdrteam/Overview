@@ -2,24 +2,16 @@
 
   > This is where Firebase stores binaries such as images.
 
-* profile_pics/
-  * uid-00001/
-    * profile_image
-* listing_pics/
-  * uid-00001/
-    * lid-00001/
-      * image-00001
-      * image-00002
-      * image-00003
-      * image-00004
-    * lid-00003/
-      * image-00008
-      * image-00009
-  * uid-00002/
-    * lid-00002/
-      * image-00005
-      * image-00006
-      * image-00007
+* pictures/
+  * listings/
+    * lid/
+      * profile picture
+      * pictures/
+        * picture ...
+  * users/
+    * uid/
+      * profile picture
+
 
 
 # DataBase
@@ -27,39 +19,58 @@
   > This is where Firebase stores information as documents (noSQL).
 
 * users/
-  * uid-00001/
-    * profile_image_url
-    * my_listings/
-      * lid-00001
-      * lid-00003
-  * uid-00002/
-    * profile_image_url
-    * my_listings/
-      * lid-00002
+  * uid/
+    * name : `String`
+    * email : `String`
+    * phone : `String`
+    * profile_url : `String`
+    * listings : `[ lid ]` (max 2)
+    * tags : `{ String : Any }`
+      * smoking : `Boolean`
+      * dogs : `Boolean`
+      * cats : `Boolean`
+      * other_pets : `Boolean`
+    * preferences : `{ String : Any }`
+      * measurement_unit : `String`
+    * school : `sid`
+    * major : `mid`
 * listings/
-  * lid-00001/
-    * address
-    * header_photo_url
-    * photo_urls/
-      * image-00001_url
-      * image-00002_url
-      * image-00003_url
-      * image-00004_url
-    * description
-    * tags/
-      * smoking_permitted/
-        * true
-      * dogs_permitted/
-        * false
+  * lid/
+    * address_1 : `String`
+    * address_2 : `String`
+    * zip_code : `String`
+    * unit_number : `String`
+    * hm_bed : `String` 
+    * hm_bath : `String`
+      > Floor plan = hm_bed & hm_bath
+    * tags : `{ String : Any }`
+    * dates : `{ String : Timestamp }`
+    * map_location : `Geopoint`
+    * location_name : `String`
+    * looking_for : `String` ??? what is this?
+    * costs : `{ String : Number }`
+    * vacancies : `Number`
+    * Comments : `String`
+
+* schools/
+  * sid/
+    * name : `String`
+* majors/
+  * mid/
+    * title : `String`
+
+
 
 # Auth
 
   > This is where Firebase stores and configures users and auth options.
 
 * User
-  * email
-  * password
-  * display name
-  * uid
+  * identifier (email)
+  * providers (auth methods)
   * date created
   * last date signed in
+  * uid
+    > *not stored visibly*
+      * *password*
+      * *display name*
